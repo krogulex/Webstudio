@@ -1,0 +1,52 @@
+
+/* MAIN PAGE */
+
+/* HEADER */
+
+/* END HEADER */
+
+/* TITLE */
+
+/* LIST */
+
+/* END LIST */
+
+/* WHAT WE DO? */
+
+/* END WHAT WE DO? */
+
+/* OUR TEAM */
+
+/* END OUR TEAM */
+
+/* OUR CLIENTS */
+
+/* END OUR CLIENTS */
+
+/* BOTTOM */
+
+/* END BOTTOM */
+
+/* END MAIN PAGE */
+
+/* PORTFOLIO PAGE  */
+
+
+/* END PORTFOLIO PAGE */
+
+/* MODAL WINDOW */
+
+/* END MODAL WINDOW*/
+
+/* Pytania do mentora
+.close-btn-icon nie jest wyśrodkowany idealnie na środku.
+podkreślenie pod aktywną stroną przesunęło "Agencja, portfolio" lekko w góre, trzeba to zrobić inaczej. 
+
+Sama ikonka close-btn-icon nie jest idealnie wyśrodkowana, ale w figmie też ona nie jest idealnie w środku. Moje okno modalne, ma trochę inne atrybuty w css (takie jak w zadaniu z autosprawdzania), a nie takie jak jest na nagraniu w materiałach, ale działa poprawnie.
+Przy focusie formularza z kometarzem textarea przesuwa się całość
+Po zastosowaniu w button margin-bottom: 40px, to w narzędziach developerskich widać, że ta odległość jest większa niż 40px, więc odgległości muszą się nie zgadzać w całym oknie modułowym
+checkbox nie jest wyśrodkowany z tekstem.
+*/
+/* Notatki na później 
+Zmienić kolory na podstawie var.
+*/ ;
