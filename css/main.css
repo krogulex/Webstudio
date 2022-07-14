@@ -126,6 +126,7 @@ link {
 }
 .logo--color {
   color: #2196F3;
+  padding-left: 15px;
 }
 .logo--white {
   color: #fff;
@@ -205,6 +206,7 @@ link {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: auto;
 }
 
 .backdrop {
