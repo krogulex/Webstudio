@@ -1,13 +1,11 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  
+.what-we-do {
+  display: none;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  
-  }
 @media screen and (min-width: 1200px) {
   
- }
 .what-we-do {
+    display: flex;
+    visibility: visible;
     padding-top: 0px;
     padding-bottom: 94px;
   }
@@ -38,3 +36,4 @@
     bottom: 0;
     margin: 0;
   }
+}

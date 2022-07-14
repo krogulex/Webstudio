@@ -1,5 +1,4 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .section__title {
+.section__title {
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
@@ -7,24 +6,13 @@
     letter-spacing: 0.03em;
     padding-bottom: 30px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .section__title {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    padding-bottom: 30px;
-  }
+@media screen and (min-width: 768px) {
+ 
   }
 @media screen and (min-width: 1200px) {
   .section__title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
     padding-bottom: 50px;
   }
 }
