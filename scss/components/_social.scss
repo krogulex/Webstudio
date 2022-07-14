@@ -1,7 +1,7 @@
 .social {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 16px 32px 32px 30px;
     padding-left: 32px;
     padding-right: 32px;
@@ -42,3 +42,12 @@
        background-color: $color-primary;
   }
   }
+@media screen and (min-width: 768px) {
+  
+  }
+@media screen and (min-width: 1200px) {
+  .social {
+    justify-content: space-between;
+  }
+
+ }

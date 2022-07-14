@@ -6,7 +6,6 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: $color-accent;
-    margin-right: 93px;
 
     &--color {
       color: $color-primary;
@@ -15,4 +14,12 @@
       color: $color-tertiary;
       ;
     }
+  }
+@media screen and (min-width: 768px) {
+
+  }
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
   }

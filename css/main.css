@@ -50,6 +50,7 @@ link {
   max-width: 100%;
   align-items: center;
   margin: 0px auto;
+  padding: 0 15px;
 }
 .bottom .container {
   padding-top: 60px;
@@ -60,7 +61,7 @@ link {
   flex-direction: row;
   align-items: center;
   margin: 0 auto 0 auto;
-  padding: 24px 0px 25px 0px;
+  padding: 16px 0px 16px 0px;
 }
 .portfolio-page .container {
   justify-content: center;
@@ -74,9 +75,17 @@ link {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding: 0;
   }
   .title .container {
     width: 1200px;
+  }
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    padding: 24px 0px 25px 0px;
   }
 }
 .section {
@@ -114,7 +123,6 @@ link {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #212121;
-  margin-right: 93px;
 }
 .logo--color {
   color: #2196F3;
@@ -123,10 +131,15 @@ link {
   color: #fff;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
 .social {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 16px 32px 32px 30px;
   padding-left: 32px;
   padding-right: 32px;
@@ -169,6 +182,11 @@ link {
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .social {
+    justify-content: space-between;
+  }
+}
 .title__button {
   background-color: #2196F3;
   color: #fff;
@@ -186,6 +204,7 @@ link {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .backdrop {
@@ -370,11 +389,16 @@ link {
 }
 
 header {
+  width: 100%;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+}
+
+.header__desktop {
+  display: none;
 }
 
 .navi {
@@ -405,7 +429,7 @@ header {
 
 .contact {
   display: flex;
-  margin-left: auto;
+  margin-left: 345px;
 }
 
 .contact__item:not(:last-child) {
@@ -437,6 +461,11 @@ header {
   fill: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__desktop {
+    display: flex;
+  }
+}
 .title {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-img.jpg");
   background-repeat: no-repeat;
@@ -459,7 +488,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
-  width: 100%;
+  max-width: 365px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -485,7 +514,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
-    width: 696px;
+    max-width: 696px;
   }
 }
 .list {
@@ -493,8 +522,8 @@ header {
   width: 100%;
 }
 
-.list__item {
-  padding: 15px 15px;
+.list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .list__headline {
@@ -543,10 +572,10 @@ header {
   }
   .list__item {
     width: 270px;
-    padding: 0;
   }
   .list__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0px;
   }
   .list__headline {
     font-weight: 700;
@@ -622,15 +651,21 @@ header {
   width: 100%;
 }
 
+.our-team__item {
+  width: 100%;
+}
+
 .our-team__list {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .our-team__frame {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
-  height: 428px;
+  max-width: 450px;
   background-color: #fff;
   margin: 0;
 }
@@ -647,17 +682,37 @@ header {
 }
 
 .our-team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .our-team__list {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+  }
+  .our-team__item {
+    width: 100%;
+  }
+  .our-team__frame {
+    width: 270px;
+    height: 428px;
+    margin: 0;
+  }
+  .our-team__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0px;
   }
 }
+.our-clients {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
 .our-clients__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .our-clients__item {
@@ -665,6 +720,8 @@ header {
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
+  flex-basis: calc((100% - 30px) / 2);
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -676,18 +733,26 @@ header {
   border: 1px solid #2196F3;
   cursor: pointer;
 }
-.our-clients__item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .logo__icon {
   width: 106px;
   height: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-clients__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .our-clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .bottom {
   background-color: #2F303A;
   line-height: 1.71;
+  width: 100%;
+  text-align: center;
 }
 
 .address {
@@ -702,6 +767,7 @@ header {
 }
 
 .contact--bottom {
+  justify-content: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -709,10 +775,6 @@ header {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin: 9px 0px 9px 0px;
-}
-
-.bottom-list {
-  display: flex;
 }
 
 .bottom-list__headline {
@@ -724,21 +786,13 @@ header {
   padding-bottom: 20px;
 }
 
-.bottom-list__item:not(:last-child) {
-  margin-right: 70px;
-}
-
-.bottom-form {
-  display: flex;
-}
-
 .bottom-form__input {
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2F303A;
-  width: 358px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -757,6 +811,30 @@ header {
   margin-left: 24px;
 }
 
+.bottom-list__item:not(:last-child) {
+  margin-right: 0px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom-list {
+    display: flex;
+  }
+  .bottom-form {
+    display: flex;
+  }
+  .bottom-list__item:not(:last-child) {
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
+  .bottom-form__input {
+    width: 358px;
+  }
+  .bottom-form__input {
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
+}
 .portfolio-page {
   padding-bottom: 0px;
 }

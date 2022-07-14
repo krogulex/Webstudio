@@ -1,12 +1,13 @@
 header {
-    text-decoration: none;
-    font-family: $main-font;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    border-bottom: 1px solid #ececec;
+  width: 100%;
+  text-decoration: none;
+  font-family: $main-font;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
   }
 .header__desktop {
-
+  display: none;
 }
   .navi {
     display: flex;
@@ -33,7 +34,7 @@ header {
   }
   .contact {
     display: flex;
-    margin-left: auto;
+    margin-left: 345px;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;
@@ -60,12 +61,12 @@ header {
     color: $color-primary;
     fill: $color-primary;
   }
-
-  
 @media screen and (min-width: 768px)  {
   
 }
 @media screen and (min-width: 1200px) {
   .header__desktop {
+  display: flex;
   }
+
 }
