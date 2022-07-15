@@ -55,6 +55,7 @@ link {
 .bottom .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 .header .container {
   display: flex;
@@ -72,6 +73,13 @@ link {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header .container {
+    padding: 19px 0px 19px 0px;
+    align-items: center;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -86,6 +94,9 @@ link {
     align-items: center;
     margin: 0 auto 0 auto;
     padding: 24px 0px 25px 0px;
+  }
+  .bottom .container {
+    text-align: start;
   }
 }
 .section {
@@ -132,9 +143,23 @@ link {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 83px;
+  }
+  .logo--color {
+    padding-left: 0px;
+  }
+  .logo--white {
+    margin: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
+  }
+  .logo--color {
+    padding-left: 0px;
   }
 }
 .social {
@@ -392,6 +417,7 @@ link {
 
 header {
   width: 100%;
+  height: 60px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -403,7 +429,7 @@ header {
   display: none;
 }
 
-.navi {
+.navi__list {
   display: flex;
 }
 
@@ -463,9 +489,39 @@ header {
   fill: #2196F3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header__desktop {
+    display: flex;
+  }
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  header {
+    height: 80px;
+  }
+  .contact {
+    display: block;
+    margin-left: 100px;
+  }
+  .navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navi__link--active::after {
+    top: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header__desktop {
     display: flex;
+  }
+  header {
+    height: 80px;
+  }
+  .contact__link {
+    display: flex;
+    align-items: center;
   }
 }
 .title {
@@ -818,6 +874,31 @@ header {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .bottom {
+    text-align: center;
+  }
+  .bottom-form__input {
+    width: 450px;
+  }
+  .bottom-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .address {
+    text-align: center;
+  }
+  .contact--bottom {
+    justify-content: center;
+  }
+  .bottom-list__item:nth-child(1) {
+    margin-right: 144px;
+  }
+  .bottom-form {
+    padding: 0 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .bottom-list {
     display: flex;
@@ -835,6 +916,9 @@ header {
   .bottom-form__input {
     margin-right: 12px;
     margin-bottom: 0px;
+  }
+  .contact--bottom {
+    justify-content: start;
   }
 }
 .portfolio-page {

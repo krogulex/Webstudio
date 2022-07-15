@@ -60,8 +60,30 @@
   margin-right: 0px;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .bottom {
+    text-align: center;
+  }
+  .bottom-form__input {
+    width: 450px;
+  }
+  .bottom-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .address {
+    text-align: center;
+  }
+  .contact--bottom {
+    justify-content: center;
+  }
+  .bottom-list__item:nth-child(1) {
+    margin-right: 144px;
+  }
+  .bottom-form {
+    padding: 0 200px;
+  }
   }
 @media screen and (min-width: 1200px) {
   .bottom-list {
@@ -81,5 +103,8 @@
     margin-right: 12px;
     margin-bottom: 0px;
  }
+ .contact--bottom {
+  justify-content: start;
+}
 }
  
