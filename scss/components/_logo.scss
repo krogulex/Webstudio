@@ -6,13 +6,15 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: $color-accent;
+    padding-left: 15px;
 
     &--color {
       color: $color-primary;
-      padding-left: 15px;
+
     }
     &--white {
       color: $color-tertiary;
+      padding-left: 0px;
       ;
     }
   }
@@ -21,19 +23,21 @@
     margin-right: 83px;
 
     &--color {
-      padding-left: 0px;
+
     }
     &--white {
       margin: 0px;
+      padding-left: 0px;
     }
   }
   }
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
+    padding-left: 0px;
      
     &--color {
-      padding-left: 0px;
+
     }
 
   }

@@ -33,13 +33,7 @@ header {
 .navi__item:not(:last-child) {
     margin-right: 46px;
   }
-.contact {
-    display: flex;
-    margin-left: 345px;
-  }
-.contact__item:not(:last-child) {
-    margin-right: 50px;
-  }
+
 .contact__link {
     text-decoration: none;
     color: $color-secondary;
@@ -75,6 +69,7 @@ header {
 .contact {
     display: block;
     margin-left: 100px;
+
     // sprawdzić czy nadal działa?//
   }
 .navi {
@@ -97,8 +92,15 @@ header {
   header {
     height: 80px;
   }
+  .contact {
+    display: flex;
+    margin-left: 345px;
+  }
   .contact__link {
     display: flex;
     align-items: center; 
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
   }
 }

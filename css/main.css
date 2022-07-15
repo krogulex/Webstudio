@@ -76,7 +76,7 @@ link {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .header .container {
     padding: 19px 0px 19px 0px;
-    align-items: center;
+    justify-content: center;
     margin: auto;
   }
 }
@@ -134,31 +134,28 @@ link {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #212121;
+  padding-left: 15px;
 }
 .logo--color {
   color: #2196F3;
-  padding-left: 15px;
 }
 .logo--white {
   color: #fff;
+  padding-left: 0px;
 }
 
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 83px;
   }
-  .logo--color {
-    padding-left: 0px;
-  }
   .logo--white {
     margin: 0px;
+    padding-left: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
-  }
-  .logo--color {
     padding-left: 0px;
   }
 }
@@ -455,15 +452,6 @@ header {
   margin-right: 46px;
 }
 
-.contact {
-  display: flex;
-  margin-left: 345px;
-}
-
-.contact__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .contact__link {
   text-decoration: none;
   color: #757575;
@@ -519,9 +507,16 @@ header {
   header {
     height: 80px;
   }
+  .contact {
+    display: flex;
+    margin-left: 345px;
+  }
   .contact__link {
     display: flex;
     align-items: center;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 .title {
@@ -617,11 +612,14 @@ header {
   width: 70px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+  }
+  .list__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -797,6 +795,11 @@ header {
   height: 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .our-clients__item {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
 @media screen and (min-width: 1200px) {
   .our-clients__list {
     display: flex;
@@ -885,9 +888,6 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  .address {
-    text-align: center;
   }
   .contact--bottom {
     justify-content: center;
