@@ -50,6 +50,14 @@
           </li>
         </ul>
       </div>
+      <div class="header__mobile">
+        <button class="menu__button js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="menu__icon">
+          <use href="./images/sprite.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      </div>
     </div>
   </header>
   <main>
@@ -448,7 +456,31 @@
       </form>
     </div>
   </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu__button--close js-close-menu">
+      <svg class="menu__button--close-icon">
+        <use href="./images/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li><a href="./index.html" class="link">Agencja</a></li>
+      <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+      <li><a href="" class="link">Kontakt</a></li>
+    </ul>
+    <ul class="mobile-menu">
+      <li><a href="" class="link">+48 111 111 111</a></li>
+      <li><a href="" class="link">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-menu">
+      <li><a href="" class="link">Instagram</a></li>
+      <li><a href="" class="link">Twitter</a></li>
+      <li><a href="" class="link">Facebook</a></li>
+      <li><a href="" class="link">LinkedIn</a></li>
+    </ul>
+  </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

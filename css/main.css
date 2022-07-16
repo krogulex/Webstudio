@@ -62,7 +62,7 @@ link {
   flex-direction: row;
   align-items: center;
   margin: 0 auto 0 auto;
-  padding: 16px 0px 16px 0px;
+  padding: 10px 0px;
 }
 .portfolio-page .container {
   justify-content: center;
@@ -412,6 +412,52 @@ link {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu__button--close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu__button--close-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__button--close-icon:focus,
+.menu__button--close-icon:hover {
+  fill: #2196F3;
+}
+
 header {
   width: 100%;
   height: 60px;
@@ -477,9 +523,42 @@ header {
   fill: #2196F3;
 }
 
+.header__mobile {
+  margin-right: 23px;
+  margin-left: auto;
+}
+
+.menu__button {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__button:focus,
+.menu__button:hover {
+  fill: #2196F3;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .header__desktop {
     display: flex;
+  }
+  .header__mobile {
+    display: none;
   }
   .contact__item:not(:last-child) {
     margin-bottom: 10px;
@@ -503,6 +582,9 @@ header {
 @media screen and (min-width: 1200px) {
   .header__desktop {
     display: flex;
+  }
+  .header__mobile {
+    display: none;
   }
   header {
     height: 80px;

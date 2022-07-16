@@ -56,9 +56,38 @@ header {
     color: $color-primary;
     fill: $color-primary;
   }
+.header__mobile {
+  margin-right: 23px;
+  margin-left: auto;
+}
+.menu__button {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.menu__icon {
+  width: 40px;
+  height: 40px;
+}
+.menu__button:focus,
+.menu__button:hover {
+  fill: $color-primary;
+}
 @media screen and (min-width: 768px) and (max-width: 1200px)  {
 .header__desktop {
     display: flex;
+  }
+.header__mobile {
+    display: none;
   }
 .contact__item:not(:last-child) {
     margin-bottom: 10px;
@@ -88,6 +117,9 @@ header {
 @media screen and (min-width: 1200px) {
   .header__desktop {
   display: flex;
+  }
+  .header__mobile {
+  display: none;
   }
   header {
     height: 80px;
