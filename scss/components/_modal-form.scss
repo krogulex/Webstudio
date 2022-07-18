@@ -3,6 +3,7 @@
     flex-direction: column;
   }
 .modal-form__headline {
+    width: calc(100% - 80px);
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -26,7 +27,7 @@
     }
   }
 .modal-form__input {
-    width: 448px;
+    width: calc(100% - 40px);
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -49,7 +50,7 @@
   }
 .modal-form__textarea {
     resize: none;
-    width: 448px;
+    width: calc(100% - 40px);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-top: 4px;
@@ -61,4 +62,8 @@
       border: 1px solid $color-primary;
       outline: none;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+
   }
