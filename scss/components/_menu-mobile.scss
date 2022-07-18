@@ -64,10 +64,10 @@
 .menu-navigation__link:focus,
 .menu-navigation__link:hover {
   color: $color-primary;
-    fill: $color-primary;
+  fill: $color-primary;
 }
-.menu-contact { 
-    margin-top: auto; 
+.menu-contact {
+  margin-top: auto;
 }
 .menu-contact__phone {
   text-decoration: none;
@@ -90,8 +90,8 @@
 }
 
 .menu-social__list {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 .menu-social__item {
   font-weight: 500;
@@ -100,11 +100,11 @@
   letter-spacing: 0.02em;
 }
 .menu-social__item:not(:last-child)::after {
-    content: "";
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-    margin-left: 10px;
-    margin-right: 9px;
+  content: "";
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
+  margin-right: 9px;
 }
 .menu-social__link {
   color: $color-primary;

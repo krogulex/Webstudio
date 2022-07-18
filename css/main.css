@@ -93,7 +93,7 @@ link {
     flex-direction: row;
     align-items: center;
     margin: 0 auto 0 auto;
-    padding: 24px 0px 25px 0px;
+    padding: 25px 0px 25px 0px;
   }
   .bottom .container {
     text-align: start;
@@ -564,7 +564,7 @@ header {
   content: "";
   display: flex;
   position: relative;
-  top: 32px;
+  top: 30px;
   border-top: 4px solid #2196F3;
   border-radius: 2px;
 }
@@ -577,10 +577,7 @@ header {
   text-decoration: none;
   color: #757575;
   fill: #757575;
-  display: flex;
-  align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact__icon {
@@ -983,7 +980,6 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 20px;
-  text-align: center;
 }
 
 .contact--bottom {
