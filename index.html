@@ -51,12 +51,11 @@
         </ul>
       </div>
       <div class="header__mobile">
-        <button class="menu__button js-open-menu" aria-expanded="false"
-        aria-controls="mobile-menu">
-        <svg class="menu__icon">
-          <use href="./images/sprite.svg#icon-menu-open"></use>
-        </svg>
-      </button>
+        <button class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu__icon">
+            <use href="./images/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -152,11 +151,14 @@
         <ul class="our-team__list">
           <li class="our-team__item">
             <figure class="our-team__frame">
-              <img src="images/Product Designer.jpg" alt="Product Designer" width="270" height="260" />
+              <img class="our-team__img" src="images/Product-designer-mobile-@1x-450x460.jpg"
+                srcset="images/Product-designer-mobile-@1x-450x460.jpg 450w, images/Product-designer-mobile-@2x-900x920.jpg 900w, images\Product-designer-tablet-@1x-354x374.jpg 354w, images\Product-designer-tablet-@2x-708x748.jpg 708w, images\Product-designer-desktop-@1x-270x260.jpg 270w, images\Product-designer-desktop-@2x-540x520.jpg 540w"
+                alt="Product Designer"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 200px) 450px" />
               <figcaption>
                 <h3 class="our-team__name">John Doe</h3>
                 <p class="our-team__workplace">Product Designer</p>
-                <ul class="social list">
+                <ul class="social">
                   <li>
                     <a class="social__link" href="#">
                       <svg class="social__icon">
@@ -191,11 +193,14 @@
           </li>
           <li class="our-team__item">
             <figure class="our-team__frame">
-              <img src="images/Frontend Developer.jpg" alt="Frontend Developer" width="270" height="260" />
+              <img class="our-team__img" src="images/Frontend-mobile-@1x-450x460.jpg"
+                srcset="images\Frontend-mobile-@1x-450x460.jpg 450w, images\Frontend-mobile-@2x-900x920.jpg 900w, images\Frontend-tablet-@1x-354x374.jpg 354w, images\Frontend-tablet-@2x-708x748.jpg 708w, images\Frontend-desktop-@1x-270x260.jpg 270w, images\Product-designer-desktop-@2x-540x520.jpg 540w"
+                alt="Frontend Developer"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 200px) 450px" />
               <figcaption>
                 <h3 class="our-team__name">John Doe</h3>
                 <p class="our-team__workplace">Frontend Developer</p>
-                <ul class="social list">
+                <ul class="social">
                   <li>
                     <a class="social__link" href="#">
                       <svg class="social__icon">
@@ -230,11 +235,14 @@
           </li>
           <li class="our-team__item">
             <figure class="our-team__frame">
-              <img src="images/Marketing.jpg" alt="Marketing" width="270" height="260" />
+              <img class="our-team__img" src="images/Marketing-mobile-@1x-450x460.jpg"
+              srcset=" images/Marketing-mobile-@1x-450x460.jpg 450w, images\Marketing-mobile-@2x-900x920.jpg 900w, images\Marketing-tablet-@1x-354x374.jpg 354w, images\Marketing-tablet-@2x-708x748.jpg 708w, images\Marketing-desktop-@1x-270x260.jpg 270w, images\Marketing-desktop-@2x-540x520.jpg 540w"
+              alt="Marketing"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 200px) 450px" />
               <figcaption>
                 <h3 class="our-team__name">John Doe</h3>
                 <p class="our-team__workplace">Marketing</p>
-                <ul class="social list">
+                <ul class="social">
                   <li>
                     <a class="social__link" href="#">
                       <svg class="social__icon">
@@ -269,11 +277,14 @@
           </li>
           <li class="our-team__item">
             <figure class="our-team__frame">
-              <img src="images/UI Designer.jpg" alt="UI Designer" width="270" height="260" />
+              <img class="our-team__img" src="images/UI-designer-mobile-@1x-450x460.jpg"
+                srcset="images/UI-designer-mobile-@1x-450x460.jpg 450w, images\UI-designer-mobile-@2x-900x920.jpg 900w, images\UI-designer-tablet-@1x-354x374.jpg 354w, images\UI-designer-tablet-@2x-708-748.jpg 708w, images\UI-designer-desktop-@1x-270x260.jpg 270w, images\UI-designer-desktop-@2x-540x520.jpg 540w"
+                alt="UI Designer"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 200px) 450px" />
               <figcaption>
                 <h3 class="our-team__name">John Doe</h3>
                 <p class="our-team__workplace">UI Designer</p>
-                <ul class="social list">
+                <ul class="social">
                   <li>
                     <a class="social__link" href="#">
                       <svg class="social__icon">
@@ -463,25 +474,27 @@
       </svg>
     </button>
     <div>
-    <ul class="menu-navigation">
-      <li class="menu-navigation__item"><a href="./index.html" class="menu-navigation__link menu-navigation__link--active">Agencja</a></li>
-      <li class="menu-navigation__item"><a href="./portfolio.html" class="menu-navigation__link">Portfolio</a></li>
-      <li class="menu-navigation__item"><a href="" class="menu-navigation__link">Kontakt</a></li>
-    </ul>
+      <ul class="menu-navigation">
+        <li class="menu-navigation__item"><a href="./index.html"
+            class="menu-navigation__link menu-navigation__link--active">Agencja</a></li>
+        <li class="menu-navigation__item"><a href="./portfolio.html" class="menu-navigation__link">Portfolio</a></li>
+        <li class="menu-navigation__item"><a href="" class="menu-navigation__link">Kontakt</a></li>
+      </ul>
     </div>
     <div class="menu-contact">
-    <ul class="menu-contact__list">
-      <li class="menu-contact__phone"><a href="tel:+48111111111" class="menu-contact__phone">+48 111 111 111</a></li>
-      <li class="menu-contact__mail"><a href="mailto:info@devstudio.com" class="menu-contact__mail">info@devstudio.com</a></li>
-    </ul>
+      <ul class="menu-contact__list">
+        <li class="menu-contact__phone"><a href="tel:+48111111111" class="menu-contact__phone">+48 111 111 111</a></li>
+        <li class="menu-contact__mail"><a href="mailto:info@devstudio.com"
+            class="menu-contact__mail">info@devstudio.com</a></li>
+      </ul>
     </div>
     <div class="menu-social">
-    <ul class="menu-social__list">
-      <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
-      <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
-      <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
-      <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
-    </ul>
+      <ul class="menu-social__list">
+        <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+        <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+        <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+        <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+      </ul>
     </div>
   </div>
   <script src="./js/modal.js"></script>

@@ -39,6 +39,7 @@
   border-radius: 4px;
   background-color: $color-background;
   width: 100%;
+  max-width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -79,7 +80,7 @@
     margin-right: 144px;
   }
   .bottom-form {
-    padding: 0 200px;
+    padding: 0 100px;
   }
   }
 @media screen and (min-width: 1200px) {
