@@ -2,26 +2,25 @@
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  
-.what-we-do {
+  .what-we-do {
     display: flex;
     visibility: visible;
     padding-top: 0px;
     padding-bottom: 94px;
   }
-.what-we-do__list {
+  .what-we-do__list {
     display: flex;
     justify-content: space-between;
   }
-.what-we-do__item:not(:last-child) {
+  .what-we-do__item:not(:last-child) {
     margin-right: 30px;
   }
-.what-we-do__box {
+  .what-we-do__box {
     width: 370px;
     height: 294px;
     position: relative;
   }
-.what-we-do__text {
+  .what-we-do__text {
     position: absolute;
     width: 370px;
     height: 70px;

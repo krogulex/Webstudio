@@ -34,7 +34,7 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     max-width: 768px;
-  
+
     .header & {
       padding: 19px 0px 19px 0px;
       justify-content: center;
@@ -46,7 +46,7 @@
   .container {
     width: 1200px;
     padding: 0 15px;
-    
+
     .title & {
       width: 1200px;
     }
@@ -61,4 +61,4 @@
       text-align: start;
     }
   }
-  }
+}

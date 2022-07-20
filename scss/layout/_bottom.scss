@@ -13,7 +13,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 20px;
-  }
+}
 .contact--bottom {
   justify-content: center;
   font-style: normal;
@@ -46,10 +46,10 @@
   padding-left: 16px;
   color: $color-tertiary;
 
-    &:focus-within {
-      border: 1px solid $color-primary;
-      outline: none;
-    }
+  &:focus-within {
+    border: 1px solid $color-primary;
+    outline: none;
+  }
 }
 .bottom-form__icon {
   width: 24px;
@@ -82,7 +82,7 @@
   .bottom-form {
     padding: 0 100px;
   }
-  }
+}
 @media screen and (min-width: 1200px) {
   .bottom-list {
     display: flex;
@@ -100,9 +100,8 @@
   .bottom-form__input {
     margin-right: 12px;
     margin-bottom: 0px;
- }
- .contact--bottom {
-  justify-content: start;
+  }
+  .contact--bottom {
+    justify-content: start;
+  }
 }
-}
- 

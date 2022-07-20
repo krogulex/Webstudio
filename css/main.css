@@ -144,7 +144,7 @@ link {
   padding-left: 15px;
 }
 .logo--color {
-  color: #2196F3;
+  color: #2196f3;
 }
 .logo--white {
   color: #fff;
@@ -186,7 +186,7 @@ link {
   fill: #afb1b8;
 }
 .social__link:hover, .social__link:focus {
-  background-color: #2196F3;
+  background-color: #2196f3;
   fill: #fff;
 }
 
@@ -208,7 +208,7 @@ link {
   fill: #fff;
 }
 .social__link--bottom:hover, .social__link--bottom:focus {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 @media screen and (min-width: 1200px) {
@@ -217,12 +217,12 @@ link {
   }
 }
 .title__button {
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
-  border-color: #2F303A;
+  border-color: #2f303a;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -293,7 +293,7 @@ link {
 
 .close-btn:hover,
 .close-btn:focus {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .policy {
@@ -325,7 +325,7 @@ link {
 }
 
 .policy__link {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .policy__input:checked + .policy__text::before {
@@ -366,7 +366,7 @@ link {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__label:focus-within {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .modal-form__input {
@@ -380,7 +380,7 @@ link {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__input:focus-within {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   outline: none;
 }
 
@@ -403,7 +403,7 @@ link {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__textarea:focus-within {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   outline: none;
 }
 
@@ -432,7 +432,7 @@ link {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-list__button:hover, .button-list__button:focus {
-  background: #2196F3;
+  background: #2196f3;
   color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -509,15 +509,15 @@ link {
 }
 
 .menu-navigation__link--active {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .menu__button--close-icon:focus,
 .menu__button--close-icon:hover,
 .menu-navigation__link:focus,
 .menu-navigation__link:hover {
-  color: #2196F3;
-  fill: #2196F3;
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .menu-contact {
@@ -526,7 +526,7 @@ link {
 
 .menu-contact__phone {
   text-decoration: none;
-  color: #2196F3;
+  color: #2196f3;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -565,7 +565,7 @@ link {
 }
 
 .menu-social__link {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -598,14 +598,14 @@ header {
 }
 
 .navi__link--active {
-  color: #2196F3;
+  color: #2196f3;
 }
 .navi__link--active::after {
   content: "";
   display: flex;
   position: relative;
   top: 30px;
-  border-top: 4px solid #2196F3;
+  border-top: 4px solid #2196f3;
   border-radius: 2px;
 }
 
@@ -632,8 +632,8 @@ header {
 .contact__link:focus,
 .contact__icon:hover,
 .contact__icon:focus {
-  color: #2196F3;
-  fill: #2196F3;
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .header__mobile {
@@ -663,7 +663,7 @@ header {
 
 .menu__button:focus,
 .menu__button:hover {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1003,8 +1003,8 @@ header {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients__item:hover, .our-clients__item:focus {
-  fill: #2196F3;
-  border: 1px solid #2196F3;
+  fill: #2196f3;
+  border: 1px solid #2196f3;
   cursor: pointer;
 }
 
@@ -1028,7 +1028,7 @@ header {
   }
 }
 .bottom {
-  background-color: #2F303A;
+  background-color: #2f303a;
   line-height: 1.71;
   width: 100%;
   text-align: center;
@@ -1070,7 +1070,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: #2F303A;
+  background-color: #2f303a;
   width: 100%;
   max-width: 450px;
   height: 50px;
@@ -1080,7 +1080,7 @@ header {
   color: #fff;
 }
 .bottom-form__input:focus-within {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   outline: none;
 }
 

@@ -11,12 +11,10 @@
   transition: transform 250ms ease-in-out;
   display: flex;
   flex-direction: column;
-
 }
 
 .menu-container.is-open {
   transform: translateX(0);
-
 }
 
 .menu__button--close {

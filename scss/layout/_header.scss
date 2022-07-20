@@ -6,54 +6,54 @@ header {
   font-weight: 500;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
-  }
+}
 .header__desktop {
   display: none;
 }
 .navi__list {
-    display: flex;
-  }
+  display: flex;
+}
 .navi__link {
-    text-decoration: none;
-    color: $color-accent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  text-decoration: none;
+  color: $color-accent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .navi__link--active {
-    color: $color-primary;
+  color: $color-primary;
 
-      &::after {
-        content: "";
-        display: flex;
-        position: relative;
-        top: 30px;
-        border-top: 4px solid $color-primary;
-        border-radius: 2px;
-      }
+  &::after {
+    content: "";
+    display: flex;
+    position: relative;
+    top: 30px;
+    border-top: 4px solid $color-primary;
+    border-radius: 2px;
   }
+}
 .navi__item:not(:last-child) {
-    margin-right: 46px;
-  }
+  margin-right: 46px;
+}
 
 .contact__link {
-    text-decoration: none;
-    color: $color-secondary;
-    fill: $color-secondary;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  text-decoration: none;
+  color: $color-secondary;
+  fill: $color-secondary;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .contact__icon {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-  }
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
 .navi__link:hover,
 .navi__link:focus,
 .contact__link:hover,
 .contact__link:focus,
 .contact__icon:hover,
 .contact__icon:focus {
-    color: $color-primary;
-    fill: $color-primary;
-  }
+  color: $color-primary;
+  fill: $color-primary;
+}
 .header__mobile {
   margin-right: 23px;
   margin-left: auto;
@@ -80,44 +80,43 @@ header {
 .menu__button:hover {
   fill: $color-primary;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px)  {
-.header__desktop {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header__desktop {
     display: flex;
   }
-.header__mobile {
+  .header__mobile {
     display: none;
   }
-.contact__item:not(:last-child) {
+  .contact__item:not(:last-child) {
     margin-bottom: 10px;
   }
-header {
+  header {
     height: 80px;
   }
-.contact {
+  .contact {
     display: block;
     margin-left: 100px;
 
     // sprawdzić czy nadal działa?//
   }
-.navi {
+  .navi {
     display: flex;
     justify-content: center;
     align-items: center;
-  }  
-.navi__link--active {
-
-      &::after {
-        top: 30px;
-      }
+  }
+  .navi__link--active {
+    &::after {
+      top: 30px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__desktop {
-  display: flex;
+    display: flex;
   }
   .header__mobile {
-  display: none;
+    display: none;
   }
   header {
     height: 80px;
@@ -128,7 +127,7 @@ header {
   }
   .contact__link {
     display: flex;
-    align-items: center; 
+    align-items: center;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;

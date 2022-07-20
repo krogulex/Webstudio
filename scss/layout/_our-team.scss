@@ -43,14 +43,14 @@
     justify-content: space-between;
   }
   .our-team__item {
-  flex-basis: calc((100% - 30px) / 2);
-  margin-bottom: 30px;
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
   .our-team__frame {
     margin: 0;
     padding: 0;
   }
-  }
+}
 @media screen and (min-width: 1200px) {
   .our-team__list {
     display: flex;
@@ -59,7 +59,7 @@
   }
   .our-team__item {
     width: 100%;
-   }
+  }
   .our-team__frame {
     width: 270px;
     height: 428px;
@@ -73,4 +73,4 @@
     margin-right: 30px;
     margin-bottom: 0px;
   }
- }
+}
