@@ -20,6 +20,10 @@
   .portfolio-page & {
     justify-content: center;
   }
+  .section--box-list & {
+    display: flex;
+    justify-content: center;
+  }
   .title & {
     display: flex;
     flex-direction: column;
@@ -29,6 +33,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
+    max-width: 768px;
   
     .header & {
       padding: 19px 0px 19px 0px;
