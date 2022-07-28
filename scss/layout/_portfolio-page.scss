@@ -15,7 +15,6 @@
   cursor: pointer;
   width: 100%;
   max-width: 450px;
-  max-height: 404px;
 
   &:hover,
   &:focus {
@@ -41,7 +40,7 @@
   margin: 0;
   color: #fff;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   width: 100%;
@@ -66,22 +65,24 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  width: 322px;
   height: 36px;
   margin-top: 20px;
   margin-left: 24px;
+}
+.box__name--Orlean {
+  font-size: 14px;
 }
 .box__filter {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: $color-secondary;
-  width: 322px;
   height: 30px;
   margin-top: 4px;
   margin-left: 24px;
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .box-list {
     justify-content: space-between;
@@ -94,6 +95,7 @@
   }
   .box__overlay {
     position: absolute;
+    font-size: 18px;
     top: 0;
     background-color: rgba(33, 150, 243, 0.9);
     padding: 0 24px;
@@ -119,8 +121,16 @@
   .box__overlay {
     position: absolute;
     top: 0;
+    font-size: 18px;
     width: 370px;
     height: 294px;
     padding: 49px 45px 49px 24px;
   }
+  .box__name {
+    width: 322px;
+  }
+  .box__filter {
+    width: 322px;
+  }
+
 }
